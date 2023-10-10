@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import backgroundImage from '../../images/gallery1.jpg';
+import backgroundImage from '../../images/gallery2.jpg';
 
 export default function Album() {
     return (
@@ -10,6 +10,7 @@ export default function Album() {
                 sx={{
                     backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     height: '80vh',
                     pt: 8,
                     pb: 6,

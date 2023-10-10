@@ -9,16 +9,18 @@ import ImageCarousel from '../ImageCarousel/ImageCarousel';
 import { useState } from 'react';
 import { Close } from '@mui/icons-material';
 
+const marginTop = window.innerWidth > 900 ? '20px' : '0';
+
 const style = {
     position: 'absolute' as 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: 375,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
-    marginTop: '20px',
+    marginTop: marginTop,
     p: 4
 };
 

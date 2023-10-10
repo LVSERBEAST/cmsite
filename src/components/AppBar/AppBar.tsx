@@ -9,7 +9,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import logo from '../../images/cmwhite.png';
-import styles from './AppBar.module.css'
+import styles from './AppBar.module.css';
 import { useNavigate } from 'react-router-dom';
 import { Typography } from '@mui/material';
 
@@ -76,6 +76,8 @@ function ResponsiveAppBar() {
                       >
                           {pages.map((page) => (
                               <MenuItem
+                                  className={styles.menuItem}
+                                  style={{ width: '115px', fontSize: '28 px' }}
                                   key={page}
                                   onClick={() => {
                                       handleMenuNav(page);
