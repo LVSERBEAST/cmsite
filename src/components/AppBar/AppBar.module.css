@@ -2,12 +2,13 @@
     .logoFullScreen {
         width: 40px;
         margin-right: 15px;
+        cursor: pointer;
     }
 }
 
 @media (max-width: 900px){
     .logoFullScreen {
-        display: none
+        display: none;
     }
 }
 

@@ -1,33 +1,25 @@
 import { Outlet } from 'react-router-dom';
 import AppBar from '../components/AppBar/AppBar';
 import { Box, Link, ThemeProvider, Typography, createTheme } from '@mui/material';
-import { Facebook, Instagram, Email } from '@mui/icons-material';
-
-function Navigate(media: string, username: string) {
-    if (media === 'email') {
-        return window.location.href = 'mailto:user@example.com?subject=Subject&body=message%20goes%20here';
-    }
-    
-    const url = `http://${media}.com/${username}`;
-    var newWin = window.open(url);
-
-    if (!newWin || newWin.closed || typeof newWin.closed == 'undefined') {
-        alert('Please diasble popup blocker')
-    } else {
-        window.open(`${media}.com/${username}`);
-    }
-}
+import { Facebook, Instagram, Email, } from '@mui/icons-material';
+import { facebookLink, instagramLink, emailLink, siteLink } from '../utilities/constants';
 
 function Copyright() {
     return (
         <Typography variant="body2" color="#e1e1e1" align="center">
             <Typography component="span" display="block">
-                <Facebook sx={{ fontSize: 40 }} cursor="pointer" onClick={() => Navigate('facebook', 'christopher.markgraf')} />
-                <Instagram sx={{ fontSize: 40 }} cursor="pointer" onClick={() => Navigate('instagram', 'christopher.markgraf')} />
-                <Email sx={{ fontSize: 40 }} cursor="pointer" onClick={() => Navigate('email', '')} />
+                <Link href={facebookLink} target={'blank'}>
+                    <Facebook sx={{ fontSize: 40, color: '#e1e1e1' }} />
+                </Link>
+                <Link href={instagramLink} target={'blank'}>
+                    <Instagram sx={{ fontSize: 40, color: '#e1e1e1' }} />
+                </Link>
+                <Link href={emailLink}>
+                    <Email sx={{ fontSize: 40, color: '#e1e1e1' }} />
+                </Link>
             </Typography>
             {'Copyright © '}
-            <Link color="inherit" href="https://christophermarkgraf.com/">
+            <Link color="inherit" href={siteLink}>
                 ChristopherMarkgraf
             </Link>{' '}
             2023
