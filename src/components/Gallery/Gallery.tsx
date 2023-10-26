@@ -2,7 +2,7 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import images from './Images';
+import images from '../../utilities/images';
 import { Box, IconButton, Modal, Typography } from '@mui/material';
 import styles from './Gallery.module.css';
 import ImageCarousel from '../ImageCarousel/ImageCarousel';

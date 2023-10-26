@@ -1,3 +1,5 @@
+export const pages = ['Home', 'Gallery', 'About', 'Contact'];
+
 const email = 'christopherMarkgraf@gmail.com';
 const subject = 'Custom%20artwork';
 const message =

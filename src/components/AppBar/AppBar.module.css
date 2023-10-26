@@ -1,4 +1,4 @@
-@media (min-width: 901px){
+@media (min-width: 901px) {
     .logoFullScreen {
         width: 40px;
         margin-right: 15px;
@@ -6,19 +6,19 @@
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .logoFullScreen {
         display: none;
     }
 }
 
-@media (min-width: 901px){
+@media (min-width: 901px) {
     .logoMobile {
         display: none;
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .logoMobile {
         width: 40px;
         display: flex;

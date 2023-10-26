@@ -1,6 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import images from './Images';
+import images from '../../utilities/images';
 import styles from './ImageCarousel.module.css';
 
 type Props = {
@@ -20,4 +20,5 @@ function ImageCarousel(props: Props) {
         </Carousel>
     );
 }
+
 export default ImageCarousel;
